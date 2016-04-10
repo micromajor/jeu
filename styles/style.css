@@ -19,7 +19,13 @@
 }
 
 .monHero {
-	width           : 20px;
-	height          : 20px;
+	width           : 32px;
+	height          : 32px;
 	Background-color: red;
+}
+
+.tree {
+	width           : 32px;
+	height          : 32px;
+	background : url('../images/tiles/tree0.png') repeat;
 }
