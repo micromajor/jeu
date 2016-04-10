@@ -1,0 +1,28 @@
+HeroController.prototype.moveHero = function() {
+	$(document).keypress(function(e) {
+		console.debug(String.fromCharCode(e.which));
+
+		this.hero.moveTop   = false;
+		this.hero.moveDown  = false;
+		this.hero.moveLeft  = false;
+		this.hero.moveRight = false;
+		
+		if (String.fromCharCode(e.which) == "z") {
+			this.hero.moveTop = true;
+		}
+
+		if (String.fromCharCode(e.which) == "s") {
+			this.hero.moveDown = true;
+		}
+
+		if (String.fromCharCode(e.which) == "q") {
+			this.hero.moveLeft = true;
+		}
+
+		if (String.fromCharCode(e.which) == "d") {
+			this.hero.moveRight = true;
+		}
+
+		// if (e.which)
+	}.bind(this));
+}
